@@ -154,6 +154,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  box-shadow: color(srgb 0 0 0 / 0.25) 0px 8px 16px 0px;
 }
 .card-text {
   display: flex;
