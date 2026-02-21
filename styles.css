@@ -13,13 +13,83 @@
 }
 
 .header {
-  border: 1px solid black;
   background-color: #fff;
   grid-column: 2/5;
+  z-index: 1;
+  box-shadow: color(srgb 0 0 0 / 0.25) 0px 8px 16px 0px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
+.header-left {
+  padding: 35px 0 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 20px 15px 20px;
+}
+.container-lookup {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.container-lookup svg {
+  width: 30px;
+}
+.container-lookup input {
+  width: 90%;
+  height: 35px;
+  border-radius: 25px;
+  background-color: #e2e8f0;
+}
+.container-greeting {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container-greeting img {
+  width: 100px;
+}
+.name p:first-child {
+  font-size: 12px;
+}
+.name p:last-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+.right-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.right-up svg {
+  width: 25px;
+}
+.right-up img {
+  width: 80px;
+}
+.right-up p {
+  font-weight: 600;
+}
+.right-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.right-buttons button {
+  padding: 10px 30px;
+  background-color: #1992d4;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+}
 .side-bar {
-  border: 1px solid black;
   background-color: #1992d4;
   grid-row: 1/3;
   padding: 20px;
@@ -58,8 +128,46 @@
 }
 
 .main-content {
-  border: 1px solid black;
   background-color: #e2e8f0;
-  grid-column: 2/5;
+  grid-column: 2/4;
   grid-row: 2/3;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  padding: 5px 20px;
+}
+.projects-title {
+  margin: 50px 0 5px 10px;
+}
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 20px 15px 25px;
+  border-left: 10px solid #f0b429;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.card-text h5 {
+  font-size: 15px;
+}
+.card-link-container {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.card-link-container svg {
+  width: 25px;
+}
+.announcements {
+  background-color: #e2e8f0;
 }
